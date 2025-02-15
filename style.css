@@ -92,7 +92,7 @@ section:nth-of-type(10) .cientista{
         text-align: center;
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 80px;
         padding-top: 80px;
         padding-bottom: 80px;
         margin-left: 150px;
