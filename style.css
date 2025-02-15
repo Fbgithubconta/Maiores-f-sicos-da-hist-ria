@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 200px;
+}
+video{
+    width: 100%;
+    height: 100vh; position: fixed;
+    object-fit: cover;
+    z-index: -1;
+}
+h1{
+    color: white;
+}
+section{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.76);
+    padding: 30px;
+    gap: 20px;
+}
+.texto{
+    width: 70%;
+    height: auto;
+    padding: 10px;
+}
+a{
+    color: blue;
+}
+header{
+    text-align: center;
+    padding: 80px;
+    font-size: 25px;
+    color: #ffffff;
+}
+.cientista{
+    height: auto;
+    width: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;   /* Cobre todo o elemento, pode cortar partes da imagem */background-size: contain; /* A imagem é ajustada para caber inteira no elemento */background-size: 100% 100%; /* Define largura e altura manualmente */
+    background-position: center;
+
+}
+section:nth-of-type(1
+) .cientista{
+    background-image: url(img/img.newton.jpeg);
+}
+section:nth-of-type(2) .cientista{
+    background-image: url(img/img.einstei.jpeg);
+}
+section:nth-of-type(3) .cientista{
+    background-image: url(img/img.galiileu.jpeg);
+}
+section:nth-of-type(4) .cientista{
+    background-image: url(img/img.maxwell.jpeg);
+}
+section:nth-of-type(5) .cientista{
+    background-image: url(img/img.marie.jpeg);
+}
+section:nth-of-type(6) .cientista{
+    background-image: url(img/img.feynman.jpeg);
+}
+section:nth-of-type(7) .cientista{
+    background-image: url(img/img.bohr.jpeg);
+}
+section:nth-of-type(8) .cientista{
+    background-image: url(img/img.heisenberg.jpeg);
+}
+section:nth-of-type(9) .cientista{
+    background-image: url(img/img.erwin.jpeg);
+}
+section:nth-of-type(10) .cientista{
+    background-image: url(img/img.hawking.jpeg);
+}
+.cientista,section,.texto{
+    border-radius: 25px;
+    border: 2px solid rgb(41, 38, 38);
+}
+
+@media(min-width:1024px){
+    section{
+        width: 55vw;
+        height: auto;
+    }
+    
+    .texto p{
+        font-size: 20px;
+    }
+}
+/*Tablets pequenos*/
+@media(max-width:1023px){
+    section{
+        width: 80vw;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(255, 255, 255, 0.575);
+        padding: 20px;
+        gap: 20px;  
+    }
+    .texto{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .cientista{
+        width: 100%;;
+        height: auto;
+    }
+}
+
+
+@media(max-width: 599px){
+    section{
+        width: 85vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgba(255, 255, 255, 0.637);
+        padding: 10px;
+        gap: 40px;
+    }
+    .texto{
+        border: 2px solid rgb(41, 38, 38);
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+    .cientista{
+        width: 100%;
+        height: 200px;
+        background-position: center;
+    }
+    .cientista,section{
+        border-radius: 25px;
+        border: 2px solid rgb(41, 38, 38);
+    }
+}
