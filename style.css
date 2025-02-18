@@ -89,7 +89,6 @@ section:nth-of-type(10) .cientista{
         font-size: 20px;
     }
     header{
-        text-align: center;
         display: flex;
         flex-direction: column;
         gap: 80px;
